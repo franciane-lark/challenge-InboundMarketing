@@ -3,3 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+.container-1 {
+  background-color: black;
+  width: 1920px;
+  height: 76px;
+}
+.container-fluid {
+  margin-left: 372px;
+}
+.photo-1 {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-banner {
+  width: 1140px;
+  height: 390px;
+}
+.button {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.informations {
+  margin-left: 380px;
+}
