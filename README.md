@@ -1,7 +1,7 @@
 html test
 
-<!--<button onclick="request()">Request data</button>
-<div id="result"></div> -->
+<button onclick="request()">Request data</button>
+<div id="result"></div>
 
 
 Js test
