@@ -3,20 +3,24 @@ $(function(){
 });
 function getPosts(){
   var template = '';
+
   GetData('https://jsonplaceholder.typicode.com/posts',{},function(response){
+
     GetData('https://jsonplaceholder.typicode.com/photos',{},function(result){
-      var image = result.filter(function(itm){
-        return response.postId === itm.id;
+        var image = result.filter(function(itm){
+          return response.id === itm.id;
+        });
+
+        console.log(image);
+         $.each(response, function(i,item){
+          template += `
+            <section>
+              <img scr="${image[0].url}>
+              <p class="fs-3">${item.title}</p>
+              <p class="lh-1">${item.body}</p>
+            </section>`;
+        });
       });
-    });
-    console.log(response);
-    $.each(response, function(i,item){
-      template += `
-        <img class="card-img-top" scr="${image[0].url} alt="Card image">
-        <p class="fs-3">${item.title}</p>
-        <p class="lh-1">${item.body}</p>
-      `;
-    });
     $('#posts').html(template);
   });
 }

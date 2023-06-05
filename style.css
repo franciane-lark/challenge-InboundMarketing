@@ -38,3 +38,7 @@
 .informations {
   text-align: center;
 }
+/* min-width & max-width */
+@media screen and (min-width: 497px) and (max-width: 768px) {
+  
+}
